@@ -1,12 +1,13 @@
 body,
 html {
     font: normal normal normal 100%/1.4 tahoma, sans-serif;
-    background: #f9f9f9;
+    background: #f6ecd8 !important;
     color: #000
 }
 
 body {
-    font-size: .8em
+    font-size: .8em;
+
 }
 
 [data-draggable=target] {
@@ -25,7 +26,7 @@ body {
 
 [data-draggable=target][aria-dropeffect=move] {
     border-color: #68b;
-    background: #fff
+    background: #f6ecd8
 }
 
 [data-draggable=target][aria-dropeffect=move].dragover,
@@ -51,11 +52,8 @@ body {
 
 [data-draggable=item][aria-grabbed=true] {
     background: #8ad;
-    color: #fff
+    color: #f6ecd8
 }
-
-
-
 
 html,
 body,
@@ -80,6 +78,9 @@ header,
         height: 600px;
     }
 }
+
+
+
 
 .btn .fa {
     margin-left: 3px;

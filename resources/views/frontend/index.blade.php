@@ -1,17 +1,16 @@
 @extends('layouts.frontend')
 
 @section('content')
-
-    <div class="view" style="background-image: url({{asset('img/logo.png')}}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-        <!-- Mask & flexbox options-->
-        <div class="mask rgba-gradient align-items-center">
+    <header>
+        <div class="view" style="background-image: url({{asset('img/logo.png')}}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient align-items-center">
             <!-- Content -->
             <div class="container">
                 <!--Grid row-->
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-md-6 black-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-                        <div id="separe"></div>
                         <h1 class="h1-responsive font-weight-bold mt-sm-5">Teraz jeszcze łatwiej zebrać karty!! </h1>
                         <hr class="hr-light">
                         <h6 class="mb-4">Czy ty również zaraziłeś się manią na TWICE? <p>Tak jak my zbierasz karty najlepszych piosenkarek na świecie?</p>
@@ -36,7 +35,6 @@
     <!--Main Layout-->
     <main>
 
-        <div class="view" style="background-image: url({{asset('img/background.png')}}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 
         <div class="container" >
             <!--Grid row-->
@@ -76,7 +74,6 @@
 
 
             <!--Grid row-->
-        </div>
         </div>
     </main>
     <!--Main Layout-->

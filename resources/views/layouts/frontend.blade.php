@@ -24,13 +24,13 @@
     <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon/">
 
     <meta name="description" content="KARTY"/>
-
-
     <script>
 
         // Animations init
         new WOW().init();
     </script>
+
+
 
 </head>
 
@@ -38,7 +38,7 @@
 <body>
 
 <!-- Main navigation -->
-<header>
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
         <div class="container">
@@ -54,10 +54,10 @@
                                 Karty
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Wszystkie karty</a>
-                                <a class="dropdown-item" href="#">Moje karty</a>
-                                <a class="dropdown-item" href="#">Sprzedaż</a>
-                                <a class="dropdown-item" href="#">Wymiana</a>
+                                <a class="dropdown-item" href="{{route('allCards')}}">Wszystkie karty</a>
+                                <a class="dropdown-item" href="{{route('myCards')}}">Moje karty</a>
+                                <a class="dropdown-item" href="{{route('forSaleCards')}}">Sprzedaż</a>
+                                <a class="dropdown-item" href="{{route('forChangeCards')}}">Wymiana</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Dodaj do zaufanych</a>
                             </div>
@@ -87,7 +87,8 @@
             </div>
         </div>
     </nav>
-
+<div style="padding-top: 80px;">
+</div>
 @yield('content')
 
 

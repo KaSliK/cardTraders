@@ -14,8 +14,13 @@
 
 Route::get('/', 'FrontendController@index')->name('home');
 
-Route::group(['prefix'=>'admin', 'middleware' => 'auth'], function(){
 
+
+Route::group(['prefix'=> 'Auth', 'middleware' => 'auth'], function(){
+    Route::get('/allCards', 'FrontendController@allCards')->name('allCards');
+    Route::get('/myCards', 'FrontendController@myCards')->name('myCards');
+    Route::get('/forSaleCards', 'FrontendController@forSaleCards')->name('forSaleCards');
+    Route::get('/forChangeCards', 'FrontendController@forChangeCards')->name('forChangeCards');
     Route::get('/','BackendController@index')->name('adminHome');
 });
 

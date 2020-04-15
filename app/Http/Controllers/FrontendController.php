@@ -19,4 +19,29 @@ class FrontendController extends Controller
 
         return view('frontend.index', ['photos'=>$photos]);
     }
+
+    public function aLLCards()
+    {
+        $photos = $this->fR->getPhotosForMainPage();
+
+        return view('frontend.allCards', ['photos'=>$photos]);
+    }
+    public function myCards()
+    {
+        $photos = $this->fR->getPhotosForMainPage();
+
+        return view('frontend.myCards', ['photos'=>$photos]);
+    }
+    public function forSaleCards()
+    {
+        $photos = $this->fR->getPhotosForMainPage();
+
+        return view('frontend.forSaleCards', ['photos'=>$photos]);
+    }
+    public function forChangeCards()
+    {
+        $photos = $this->fR->getPhotosForMainPage();
+
+        return view('frontend.forChangeCards', ['photos'=>$photos]);
+    }
 }
