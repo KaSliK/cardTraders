@@ -15,7 +15,7 @@
             @foreach($photos->chunk(6) as $chunked_photos)
                 <div class="row my-2">
                     @foreach($chunked_photos as $photo)
-                        <div class="col-lg-2 col-md-4 col-sm-6 view overlay">
+                        <div class="col-lg-2 col-md-4 col-sm-6 view overlay d-flex justify-content-center">
                             <img class="img-fluid z-depth-1 " src="{{asset('img/cardExample.png')}}">
                             <a>
                                 <div class="mask waves-effect waves-light rgba-white-slight"></div>

@@ -20,6 +20,11 @@
                             <a>
                                 <div class="mask waves-effect waves-light rgba-white-slight"></div>
                             </a>
+                            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                                <button type="button" class="actionButton btn btn-amber text-center">Sprzedaj</button>
+                                <button type="button" class="actionButton btn btn-deep-orange">Na wymianę</button>
+                                <button type="button" class="actionButton btn btn-deep-orange">Usuń z kolekcji</button>
+                            </div>
                         </div>
                     @endforeach
                 </div>
