@@ -10,9 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use Illuminate\Support\Facades\Http;
 
 Route::get('/', 'FrontendController@index')->name('home');
+
+Route::get('/example', function()
+{
+    $response = Http::post('https://jsonplaceholder.typicode.com/posts', [
+        'userID' => 123
+    ]);
+
+    dd($response->json());
+
+});
 
 
 
@@ -22,6 +32,8 @@ Route::group(['prefix'=> 'Auth', 'middleware' => 'auth'], function(){
     Route::get('/forSaleCards', 'FrontendController@forSaleCards')->name('forSaleCards');
     Route::get('/forChangeCards', 'FrontendController@forChangeCards')->name('forChangeCards');
     Route::get('/','BackendController@index')->name('adminHome');
+
+
 });
 
 Auth::routes();
